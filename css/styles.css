@@ -1,0 +1,115 @@
+html, body{
+
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*
+* Global styles
+*/
+h1{
+	padding-left: 20px;
+	text-align: left;;
+	margin: 0 0 10px 0;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;;
+}
+
+a{
+	color: #fb7d29;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover{
+	color: #d4482f;
+}
+
+/*
+* Views global styles
+* Organizar "contentainer"
+*/
+
+#view-container{
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0; top: 0; bottom: 0;
+	/* As propriedades acima são para termos a caixa centrada */
+	border-radius: 10px; /* Lados redondos do caixote */
+	width: 400px;
+	height: 80vh; /* Altura seja 80% da janela */
+	text-align: center;
+	padding: 20px;
+
+	/* Juntar um sombriado */
+	-webkit-box-shadow: 6px 6px 9 px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 6px 6px 9px 0px rgba(0, 0, 0, 0.45);
+	box-shadow: 6px 6px 9px 0px rgba(0, 0, 0, 0.45);
+
+}
+
+.button_bar{
+	bottom: 20px;
+	position: absolute;
+	width: 400px;
+}
+.btn_title{
+	 float: right;
+	 line-height: 56px;
+	 padding-right: 20px;
+}
+
+
+
+
+
+/* 
+* View list styles
+*/
+ /* Para definir o que ocorre mediante a vista */
+ html.listController #view-container{
+
+ } 
+ .view_header{
+ 	/* Como está colocado à direita o botão "btn_title" */
+ 	overflow: auto;
+ }
+ .view_header h1{
+ 	float: left;
+ }
+.list_wrapper{
+	height: 55vh;
+	overflow: hidden; /* Para ver o pedaço que quero  */
+}
+#view-container li {
+	background-color: #fff4ea;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: left;
+	overflow: auto;
+
+	/* Juntar um pouco de sombra */
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.45);
+	box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.45);
+}
+.contact_data{
+	float: left;
+	padding-top: 6px;
+	max-width: 75%;
+}
+.contact_mail{
+	float: right;
+}
+.btn_edit{
+	font-size: 1.75em;
+	margin-right: 10px;
+	
+}
